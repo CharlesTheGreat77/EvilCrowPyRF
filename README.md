@@ -43,5 +43,11 @@ Transmit Tesla signals
 ```
 python3 ecrf.py --tesla
 ```
+
+Delete logs & Clean spiffs
+```
+python3 ecrf.py --delete
+```
+
 # Evil Crow RF
 https://github.com/joelsernamoreno/EvilCrowRF-V2
