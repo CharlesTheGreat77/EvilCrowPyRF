@@ -100,7 +100,7 @@ def rxConfig(mod, modulation, frequency, rxbw, deviation, datarate):
         'frequency': f'{frequency}',
         'setrxbw': f'{rxbw}', # default is 650
         'deviation': f'{deviation}', # default is 0
-        'datarate': f'{datarate}', # default is 0
+        'datarate': f'{datarate}', # default is 5
         'configmodule': '4'}
     headers = {'Content-Type': 'application/x-www-form-urlencoded'}
     response = requests.post(url, data=payload, headers=headers)
