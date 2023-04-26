@@ -13,9 +13,14 @@ install bs4 (beautifulsoup)
 ```
 
 # usage
-Configure receiver on 433.92 with rxbw of 650 (default is 650), ASK modulation (default no need to specify), deviation 0 (default), data rate to 5 (default).  
+Configure receiver on freq. 433.92 with rxbw of 650 (default is 650), ASK modulation (default no need to specify), deviation 0 (default), data rate to 5 (default).  
 ```
 python3 ecrf.py -rx -f 433.92 --rxbw 650
+```
+
+Configure reciever on freq. 434.07, deviation of 47.6, 2FSK modulation (-m 1), module 2 (ONLY RX ON MODULE 2 for FSK)
+```
+python3 ecrf.py -rx -f 434.07 -d 47.6 -mod 2 -m 1
 ```
 
 Save logs to output file (one can specify modulation and frequency to add to output, if not, input will be asked)
