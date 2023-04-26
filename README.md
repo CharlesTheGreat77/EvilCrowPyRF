@@ -39,5 +39,9 @@ Transmit signals in saved files
 python3 --txoutput logs/frontGate.txt
 ```
 
+Transmit Tesla signals
+```
+python3 ecrf.py --tesla
+```
 # Evil Crow RF
 https://github.com/joelsernamoreno/EvilCrowRF-V2
