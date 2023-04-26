@@ -8,7 +8,7 @@ def main():
     parser = argparse.ArgumentParser(description='Control ECRF v2 with Python!!')
     parser.add_argument('-f', '--frequency', type=float, required=False, help='frequency in MHz')
     parser.add_argument('-d', '--deviation', type=float, default=0, help='deviation in kHz [default: 0]')
-    parser.add_argument('-mod', '--module', type=int, default=1, help='module number [module 1, module 2]')
+    parser.add_argument('-mod', '--module', type=int, default=2, help='module number [module 1, module 2]')
     parser.add_argument('-m', '--modulation', type=int, default=2, help='modulation type [1: 2FSK, 2: ASK]')
     parser.add_argument('-t', '--transmissions', type=int, default=1, help='number of transmissions [default: 1]')
     parser.add_argument('-rxbw', '--rxbw', type=int, default=650, help='set rxbw [default: 650]')
