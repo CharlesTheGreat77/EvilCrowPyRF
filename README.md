@@ -23,7 +23,7 @@ Save logs to output file (one can specify modulation and frequency to add to out
 python3 ecrf.py -o logs/frontGate.txt [-f <frequency>] [-m <modulation>] [-d <deviation>]
 ```
 
-Transmit signals in logs two times on freq. 315.00, 2FSK (mod 1), with a deviation of 47.6, using module 2 on ECRF
+Transmit signals in logs two times on freq. 315.00, 2FSK (-m 1), with a deviation of 47.6, using module 2 on ECRF
 ```
 python3 ecrf.py -tx -f 315.00 -m 1 -d 47.6 -mod 2 -t 2
 ```
