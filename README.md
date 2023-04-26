@@ -11,6 +11,7 @@ pip3 install -r requirements.txt
 
 # Pyto (iOS) PyPI packages
 install bs4 (beautifulsoup)
+Copy ecrf.py into a blank script
 ```
 
 # usage
