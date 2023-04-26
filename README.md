@@ -1,5 +1,5 @@
 # EvilCrowPyRF
-Receive/Transmit/Save Evil Crow RF log files 📡
+Simple python script to Receive/Transmit/Save Evil Crow RF log files 📡
 
 
 # Install
