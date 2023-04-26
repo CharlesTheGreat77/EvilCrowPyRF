@@ -6,6 +6,7 @@ Simple python script to Receive/Transmit/Save Evil Crow RF log files 📡
 ```
 # if using a pc or of that sort
 git clone https://GitHub.com/CharlesTheGreat77/EvilCrowPyRF
+cd EvilCrowPyRF
 pip3 install -r requirements.txt
 
 # Pyto (iOS) PyPI packages
