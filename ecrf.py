@@ -16,7 +16,7 @@ def main():
     parser.add_argument('-rx', '--rxconfig', help='configure rx mode', action='store_true')
     parser.add_argument('-tx', '--txconfig', help='configure tx mode', action='store_true')
     parser.add_argument('-tesla', '--tesla', help='sends tesla charging port signal', action='store_true')
-    parser.add_argument('-btn', '--button', help='set payload(s) to button (button: 1, button: 2) [default: 1]', type=int, required=False)
+    parser.add_argument('-btn', '--button', help='set payload(s) to button (button: 1, button: 2)', type=int, required=False)
     parser.add_argument('-j', '--jammer', help='enable jammer (use -f to specify frequency & -p for power level)', action='store_true')
     parser.add_argument('-p', '--power', help='specify power level of jammer (1-10) [default: 5]', type=int, default=5)
     parser.add_argument('-timer', '--timer', help='specify stop time for jammer [default: 10 seconds]', type=int, default=10)
