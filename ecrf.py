@@ -52,7 +52,6 @@ def main():
             frequency = float(input(f'[*] Enter the frequency the logs are operating on: '))
             modulation = input(f'[*] Enter the modulation the logs are operating on [FSK/ASK]: ')
             if 'FSK' in modulation or 'fsk' in modulation:
-                modulation = 1
                 deviation = int(input(f'[*] Enter the deviation the logs are operating on: '))
 
         with open(args.output, 'w') as file:
