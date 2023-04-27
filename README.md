@@ -37,7 +37,7 @@ python3 ecrf.py -tx -f 315.00 -m 1 -d 47.6 -mod 1 -t 2
 
 Transmit signals in saved files
 ```
-python3 --txoutput logs/frontGate.txt
+python3 -tx -file logs/frontGate.txt
 ```
 
 Transmit Tesla signals
@@ -45,10 +45,36 @@ Transmit Tesla signals
 python3 ecrf.py --tesla
 ```
 
+Configure signal(s) to buttons (1 or 2) from a saved file
+```
+python3 ecrf.py -btn 1 -file logs/frontGate.txt
+```
+
+Configure signal(s) to buttons from viewlogs (if nothing is specified, it will automatically scrape logs form viewlog
+```
+python3 ecrf.py -btn 1
+```
+
+
 Delete logs & Clean spiffs
 ```
 python3 ecrf.py --delete
 ```
+
+Configure jammer on freq. 315 with a power of 5
+```
+python3 ecrf.py -j -f 315.00 -p 5
+```
+
+# Saved file format
+example of what file format looks like when saving viewlogs to output file
+```
+Frequency: 315.00
+Modulation: FSK
+Deviation: 29.3
+Payload: 238,155,238,155,
+```
+
 
 # Evil Crow RF
 https://github.com/joelsernamoreno/EvilCrowRF-V2
