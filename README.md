@@ -50,9 +50,9 @@ Configure signal(s) to buttons (1 or 2) from a saved file
 python3 ecrf.py -btn 1 -file logs/frontGate.txt
 ```
 
-Configure signal(s) to buttons from viewlogs (if nothing is specified, it will automatically scrape logs from viewlog)
+Configure signal(s) to buttons from viewlogs (if nothing is specified, it will automatically scrape logs from viewlog), and set frequency to 315
 ```
-python3 ecrf.py -btn 1
+python3 ecrf.py -btn 1 -f 315.00
 ```
 
 
