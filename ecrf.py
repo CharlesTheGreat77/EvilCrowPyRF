@@ -165,8 +165,8 @@ def simpleJam(mod, frequency, power, timer):
     }
     print(f"[*] Starting jammer on {frequency}Mhz")
     req = requests.post(url, data=payload)
-    # jam for 10 seconds
-    time.sleep(10)
+    # jam for x seconds
+    time.sleep(timer)
     print(f'[*] Stopping jammer..')
     req = request.post("http://192.168.4.1/stopjammer")
 
