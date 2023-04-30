@@ -206,7 +206,6 @@ def formatFile(txfile):
             elif 'Payload:' in line:
                 payload = line.split(':')[1].strip()
                 payloads.append(payload)
-    print(len(payloads))
     return frequency, modulation, deviation, payloads
 
 # delete & cleanspiffs 
