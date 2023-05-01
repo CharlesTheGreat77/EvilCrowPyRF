@@ -47,7 +47,7 @@ python3 ecrf.py --tesla
 
 Configure signal(s) to buttons (1 or 2) from a saved file
 ```
-python3 ecrf.py -btn 1 -file logs/frontGate.txt
+python3 ecrf.py -btn 1 -file logs/frontGate.txt -f 300.00
 ```
 
 Configure signal(s) to buttons from viewlogs (if nothing is specified, it will automatically scrape logs from viewlog), and set frequency to 315
