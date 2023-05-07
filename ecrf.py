@@ -173,19 +173,18 @@ def simpleJam(mod, frequency, power, timer):
 # grab log file, clean up, return list of captured signals.
 def formatCapture():
     payloads = []
-    
-    pattern = "Rawdata corrected:" 
     viewlogs = "http://192.168.4.1/viewlog"
     req = requests.get(viewlogs).text
-    soup = BeautifulSoup(req, 'html.parser').get_text()
-    lines = soup.splitlines()
-    # grab line below each match.. such being the rawdata that is corrected
-    rawdata = [i+1 for i in range(len(lines)-1) if re.search(pattern, lines[i])]
-    for match in rawdata:
-        data = lines[match].strip()
-        # remove annoying ass html tags..
-        signal = BeautifulSoup(data, 'html.parser').get_text()
-        payloads.append(signal)
+    signals = []
+    for signal in req.split('Count=')[1:]:
+        signal_data = signal.split('<br>')[1]
+        signals.append(signal_data)
+    
+    for data in signals:
+        if 'Rawdata' in data:
+            continue
+        else:
+            payloads.append(data)
     return payloads
 
 # grab config settings and payload in file
