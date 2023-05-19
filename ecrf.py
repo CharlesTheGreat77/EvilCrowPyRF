@@ -181,6 +181,7 @@ def formatCapture():
         signals.append(signal_data)
     
     for data in signals:
+        # rawdata corrected was not sending signal correctly
         if 'Rawdata' in data:
             continue
         else:
