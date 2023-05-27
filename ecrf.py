@@ -12,7 +12,7 @@ def main():
     parser.add_argument('-m', '--modulation', type=int, default=2, help='modulation type [1: 2FSK, 2: ASK]')
     parser.add_argument('-t', '--transmissions', type=int, default=1, help='number of transmissions [default: 1]')
     parser.add_argument('-rxbw', '--rxbw', type=float, default=650.00, help='set rxbw [default: 650.00]')
-    parser.add_argument('-dr', '--datarate', type=int, default=3.79, help='datarate [default: 3.79]')
+    parser.add_argument('-dr', '--datarate', type=float, default=3.79, help='datarate [default: 3.79]')
     parser.add_argument('-rx', '--rxconfig', help='configure rx mode', action='store_true')
     parser.add_argument('-tx', '--txconfig', help='configure tx mode', action='store_true')
     parser.add_argument('-tesla', '--tesla', help='sends tesla charging port signal', action='store_true')
