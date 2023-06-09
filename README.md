@@ -1,7 +1,11 @@
 # EvilCrowPyRF
 Simple python script to Receive/Transmit/Save Evil Crow RF log files 📡
 
+# H-Rat Custom ECRF Firmware Siri Shortcut (iOS)
+https://www.icloud.com/shortcuts/83e845a339d84b5b949d9d5af6fc02bc
 
+# Key Note
+This is for the OG firmware ONLY, not H-Rats new firmware
 # Install
 ```
 # if using a pc or of that sort
